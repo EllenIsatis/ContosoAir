@@ -15,10 +15,6 @@ steps:
       command: custom
       verbose: false
       customCommand: 'install --production'
-  - task: Npm@1
-  - script: 'npm test'
-    displayName: 'Run unit tests'
-    continueOnError: true
   - task: ArchiveFiles@2
     displayName: 'Archive $(Build.SourcesDirectory)'
     inputs:
